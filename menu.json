@@ -1,0 +1,221 @@
+{
+    "steengril": [
+        {
+            "naam": "steengrill pakket 1",
+            "img": "images1/steengrill1.jpeg",
+            "beschrijving": "Dit pakket bestaat vooral uit barbeque vlees zoals hamburgers, worstjes, kippen borst en vleesspiesjes."
+        },
+        {
+            "naam": "steengrill pakket 2",
+            "img": "images1/steengrill2.jpeg",
+            "beschrijving": "In dit pakket heb je wat duurder vlees zoals biefstuk, entrecote, lamvlees en kalfslonghaas"
+        },
+        {
+            "naam": "steengrill pakket 3",
+            "img": "images1/steengrill3.jpeg",
+            "beschrijving": "maak uw eigen gourmet pakket kies uit worstjes, hamburgers, bieftuk of andere lekkere stukjes vlees en andere lekkere dingen!!"
+        }
+    ],
+
+    "courmet": [
+
+    {
+        "naam": "courmet kinderpakket 1",
+        "img": "OIG2.m2.jpeg",
+        "beschrijving": "Het kinder pakket bestaat uit allemaal lekkere dingetjes voor de kinderen zoals hamburgers, worstjes en heel veel andere lekkere stukjes vlees."
+    },
+    {
+        "naam": "luxe pakket 2",
+        "img": "OIG4.jpeg",
+        "beschrijving": "In dit pakket heb je wat duurder vlees zoals biefstuk, entrecote, lamvlees en kalfslonghaas. Als speciaaltje krijg je pannenkoeken mix en heel klein beetje caviaar."
+    },
+    {
+        "naam": "stell eigen gourmet pakket in",
+        "img": "images1/steengrill1.jpeg",
+        "beschrijving": "Maak uw eigen gourmet pakket, kies uit worstjes, hamburgers, bieftuk of andere lekkere stukjes vlees!"
+    }],
+
+    "voorgerechten": [
+        {
+            "naam": "Stokbrood met kruidenboter",
+            "img": "images1/OIG1 (1).jpeg",
+            "ingrediënten": "Stokbroodjes met kruidenboter"
+        },
+        {
+            "naam": "Caprese salade",
+            "img": "images1/Caprese salade.jpeg",
+            "ingrediënten": "Tomaat, mozzarella, basilicum, olijfolie, balsamicoazijn"
+        },
+        {
+            "naam": "Gazpacho",
+            "img": "images1/gazpacho.jpeg",
+            "ingrediënten": "Tomaat, komkommer, paprika, knoflook, olijfolie"
+        },
+        {
+            "naam": "Carpaccio",
+            "img": "images1/Dun gesneden rauwe ossenhaas.jpeg",
+            "ingrediënten": "Dun gesneden rauwe ossenhaas, rucola, Parmezaanse kaas, olijfolie, citroen"
+        },
+        {
+            "naam": "Pompoensoep",
+            "img": "images1/pompoensoep.jpeg",
+            "ingrediënten": "Pompoen, ui, knoflook, bouillon, room"
+        },
+        {
+            "naam": "Groentespiesjes",
+            "img": "images1/groentespies.jpeg",
+            "ingrediënten": "Courgette, paprika, champignons, ui, marinade naar keuze"
+        },
+        {
+            "naam": "Caesar wrap",
+            "img": "images1/Caesar wrap.jpeg",
+            "ingrediënten": "Gerookte kip, Romeinse sla, Parmezaanse kaas, Caesar dressing, tortillawrap"
+        },
+        {
+            "naam": "Vitello tonnato",
+            "img": "images1/Vitello tonnato.jpeg",
+            "ingrediënten": "Dun gesneden kalfsvlees, tonijnsaus, kappertjes, citroen"
+        }],
+
+        "vlees": [
+            {
+              "naam": "Gebraden kalkoen",
+              "afbeelding": "images1/kalkoen.jpeg",
+              "ingrediënten": "Kalkoen geroosterd met kruiden en geserveerd met cranberrysaus."
+            },
+            {
+              "naam": "Biefstuk",
+              "afbeelding": "images1/biefstukje.jpeg",
+              "ingrediënten": "Mals biefstuk geserveerd met een romige pepersaus."
+            },
+            {
+              "naam": "Lamskoteletten",
+              "afbeelding": "images1/LAMSKOTTELETTEN.jpg",
+              "ingrediënten": "Malse lamskoteletten gekruid en gegrild of gebakken."
+            },
+            {
+              "naam": "varkenshaas",
+              "afbeelding": "images1/varkenshaas.jpeg",
+              "ingrediënten": "Varkenshaas gebakken en geserveerd met een romige champignonroomsaus."
+            },
+            {
+              "naam": "Ribeye steak",
+              "afbeelding": "images1/ribeye.jpeg",
+              "ingrediënten": "Sappige ribeye steak gegrild of gebakken naar wens."
+            },
+            {
+              "naam": "Varkensribbetjes",
+              "afbeelding": "images1/varkensribben.jpeg",
+              "ingrediënten": "Courgette, paprika, champignons, ui, marinade naar keuze."
+            },
+            {
+              "naam": "Gegrilde spareribs",
+              "afbeelding": "images1/spareribs.jpeg",
+              "ingrediënten": "Sappige spareribs gemarineerd en gegrild tot ze van het bot vallen."
+            },
+            {
+              "naam": "Malse entrecote",
+              "afbeelding": "images1/entrecote.jpeg",
+              "ingrediënten": "Malse entrecote geserveerd met een klontje kruidenboter."
+            }
+          ],
+
+          "vis": [
+            {
+              "naam": "Gegrilde zalmfilet",
+              "afbeelding": "images1/zalmpie.jpeg",
+              "ingrediënten": "Verse zalmfilet gemarineerd en gegrild tot perfectie."
+            },
+            {
+              "naam": "Viscurry",
+              "afbeelding": "images1/Viscurry.jpeg",
+              "ingrediënten": "Gemengde visfilets gekookt in een pittige currysaus met groenten."
+            },
+            {
+              "naam": "Gegrilde garnalenspiesjes",
+              "afbeelding": "images1/garnaalspies.jpeg",
+              "ingrediënten": "Grote garnalen gemarineerd en gegrild op spiesjes."
+            },
+            {
+              "naam": "Visburger",
+              "afbeelding": "images1/visburger.jpeg",
+              "ingrediënten": "Hamburger gemaakt van gemalen visfilet geserveerd op een broodje met sla en saus."
+            },
+            {
+              "naam": "Vislasagne",
+              "afbeelding": "images1/vislasagne.jpeg",
+              "ingrediënten": "Lasagne gemaakt met lagen visfilets, bechamelsaus en kaas."
+            },
+            {
+              "naam": "Gebakken heilbot",
+              "afbeelding": "images1/heilbot.jpeg",
+              "ingrediënten": "Heilbotfilet gebakken en geserveerd met een verfijnde dillebotersaus."
+            }
+          ],
+
+          "bijgerechten": [
+            {
+              "naam": "Gebakken rijst",
+              "afbeelding": "images1/rijst.jpeg",
+              "ingrediënten": "Rijst gebakken met groenten, ei, sojasaus en kruiden zoals gember en knoflook."
+            },
+            {
+              "naam": "Zoete aardappelfrietjes",
+              "afbeelding": "images1/zoete aardappels.jpeg",
+              "ingrediënten": "Zoete aardappel gesneden in frietjes en gebakken in de oven met kruiden."
+            },
+            {
+              "naam": "Couscoussalade",
+              "afbeelding": "images1/couscous.jpeg",
+              "ingrediënten": "Couscous gemengd met geroosterde groenten, kikkererwten, munt en een citroen-dille dressing."
+            },
+            {
+              "naam": "bakje frietjes",
+              "afbeelding": "images1/frietjes.jpeg",
+              "ingrediënten": "het frietjes en geen patat"
+            },
+            {
+              "naam": "Gegrilde maïskolven",
+              "afbeelding": "images1/mais.jpeg",
+              "ingrediënten": "Maïskolven gegrild met boter en kruiden zoals paprikapoeder en chili."
+            },
+            {
+              "naam": "Quinoa salade",
+              "afbeelding": "images1/quinoa.jpeg",
+              "ingrediënten": "Quinoa gemengd met geroosterde groenten, feta, olijven en een citroen-dille dressing."
+            }
+          ],
+
+          "desserts": [
+            {
+              "naam": "Appeltaart",
+              "afbeelding": "images1/appeltaartje.jpeg",
+              "ingrediënten": "Traditionele appeltaart met kaneel en een knapperige korst."
+            },
+            {
+              "naam": "Tiramisu",
+              "afbeelding": "images1/tiru.jpeg",
+              "ingrediënten": "Laagjes espresso gedrenkte lange vingers en mascarponecrème, bestrooid met cacaopoeder."
+            },
+            {
+              "naam": "Fruitcrumble",
+              "afbeelding": "images1/fruitcrumble.jpeg",
+              "ingrediënten": "Gemengd fruit (zoals appel, perzik of bosbessen) met een krokante kruimellaag, geserveerd met vanille-ijs."
+            },
+            {
+              "naam": "Churros",
+              "afbeelding": "images1/chuross.jpeg",
+              "ingrediënten": "Gefrituurde deegstaven bestrooid met kaneelsuiker, geserveerd met chocoladesaus."
+            },
+            {
+              "naam": "Red velvet cake",
+              "afbeelding": "images1/red velvet.jpeg",
+              "ingrediënten": "Rijke, fluweelzachte chocoladecake met een romige cream cheese frosting."
+            },
+            {
+              "naam": "mislukte appeltaart",
+              "afbeelding": "images1/mislukte appel.JPG",
+              "ingrediënten": "lekkere mislukte appeltaart toetje"
+            }
+          ]
+    }

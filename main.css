@@ -1,0 +1,221 @@
+.navbarcontainer {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.goldtext {
+  color: gold;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.navimg {
+  width: 10%; 
+  height: 10%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0f0f0f;
+}
+
+@media (max-width: 600px) {
+  .navbarcontainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: static;
+  }
+
+  .navimg {
+      width: 25%; 
+      height: 25%;
+  }
+
+  .goldtext {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+  }
+}
+
+
+.maincontainer {
+  margin-top: 100px; 
+  padding: 0;
+  margin: 0;
+  background-color: #0f0f0f;
+}
+
+
+.navimg {
+  width: 100%;
+  max-width: 70px;
+}
+
+.navul li h1 {
+  color: gold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+  color: gold;
+  transition: color 300ms;
+}
+
+a:hover {
+  color: red;
+  text-decoration: none;
+  outline: #0f0f0f;
+}
+
+.overons {
+    width: 500px;
+    color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.overons2 {
+    width: 500px;
+    color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.twoinfo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow {
+    width: 100%;
+}
+
+.slideshow2 {
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.feestdagen {
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.slideshow2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.card {
+  position: relative;
+  background-color: gold;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.buttons {
+  text-decoration: none;
+  background-color: black;
+  color: gold;
+  width: 100px;
+  border-radius: 3px;
+  list-style: none;
+  outline: none;
+  display: inline-block;
+  border-style: none;
+  cursor: pointer;
+  transition: color 100ms;
+  height: 40px;
+}
+
+.buttons:hover {
+  color: black;
+  background-color: red;
+  text-decoration: none;
+  outline: #0f0f0f;
+}
+
+.footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gold    ; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
