@@ -274,3 +274,15 @@ a:hover {
   overflow: auto;
   justify-content: space-around;
 }
+
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+}

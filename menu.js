@@ -47,6 +47,10 @@ fetch('menu.json')
             description.textContent = item.beschrijving;
             card.appendChild(description);
 
+            const prijs = document.createElement('p');
+            prijs.textContent = `prijs: ${item.prijs}€`
+            card.appendChild(prijs);
+
             const button = document.createElement('button');
             button.classList.add('buttons');
             button.textContent = "reserveren";
@@ -78,6 +82,10 @@ fetch('menu.json')
             description.textContent = item.beschrijving;
             card.appendChild(description);
 
+            const prijs = document.createElement('p');
+            prijs.textContent = `prijs: ${item.prijs}€`
+            card.appendChild(prijs);
+
             const button = document.createElement('button');
             button.classList.add('buttons');
             button.textContent = "reserveren";
@@ -89,62 +97,84 @@ fetch('menu.json')
     .catch(error => console.error('Error fetching menu:', error));
 
 //voorgerechten
-    fetch('menu.json')
-    .then(response => response.json())
-    .then(data => {
-        data.voorgerechten.forEach(item => {
-            var card = document.createElement('div');
-            card.classList.add('card');
+let counter = 0;
 
-            var title = document.createElement('h3');
-            title.textContent = item.naam;
-            card.appendChild(title);
+fetch('menu.json')
+ .then(response => response.json())
+ .then(data => {
+    data.voorgerechten.forEach(item => {
+      const card = document.createElement('div');
+      card.classList.add('card');
 
-            var img = document.createElement('img');
-            img.src = item.img;
-            img.classList.add('imgpak1');
-            card.appendChild(img);
+      const title = document.createElement('h3');
+      title.textContent = item.naam;
+      card.appendChild(title);
 
-            var description = document.createElement('p');
-            description.textContent = item.ingrediënten;
-            card.appendChild(description);
+      const img = document.createElement('img');
+      img.src = item.img;
+      img.classList.add('imgpak1');
+      card.appendChild(img);
 
-            var button = document.createElement('button');
-            button.classList.add('buttons');
-            button.textContent = "reserveren";
-            card.appendChild(button);
+      const description = document.createElement('p');
+      description.textContent = item.ingrediënten;
+      card.appendChild(description);
 
-            document.getElementById('menu-container2').appendChild(card);
-        });
-    })
-    .catch(error => console.error('Error fetching menu:', error));
+      const prijs = document.createElement('p');
+      prijs.textContent = `prijs: ${item.prijs}€`
+      card.appendChild(prijs);
+
+      const button = document.createElement('button');
+      button.classList.add('buttons');
+      button.textContent = "aan bestelling toevoegen";
+      card.appendChild(button);
+
+      document.getElementById('menu-container2').appendChild(card);
+      button.setAttribute("href", "bestellen.html");
+      button.addEventListener("click", function() {
+        let items = JSON.parse(localStorage.getItem('items')) || [];
+        items.push({title: title.textContent, img: item.img, description: description.textContent, prijs: prijs.number});   
+        localStorage.setItem('items', JSON.stringify(items));
+      });
+    });
+  })
+ .catch(error => console.error('Error fetching menu:', error));
 //vlees
     fetch('menu.json')
     .then(response => response.json())
     .then(data => {
         data.vlees.forEach(item => {
-            var card = document.createElement('div');
+            const card = document.createElement('div');
             card.classList.add('card');
 
-            var title = document.createElement('h3');
+            const title = document.createElement('h3');
             title.textContent = item.naam;
             card.appendChild(title);
 
-            var img = document.createElement('img');
-            img.src = item.afbeelding;
+            const img = document.createElement('img');
+            img.src = item.img;
             img.classList.add('imgpak1');
             card.appendChild(img);
 
-            var description = document.createElement('p');
+            const description = document.createElement('p');
             description.textContent = item.ingrediënten;
             card.appendChild(description);
 
-            var button = document.createElement('button');
+            const prijs = document.createElement('p');
+            prijs.textContent = `prijs: ${item.prijs}€`
+            card.appendChild(prijs);
+
+            const button = document.createElement('button');
             button.classList.add('buttons');
-            button.textContent = "reserveren";
+            button.textContent = "aan bestelling toevoegen";
             card.appendChild(button);
 
             document.getElementById('menu-container3').appendChild(card);
+            button.setAttribute("href", "bestellen.html");
+            button.addEventListener("click", function() {
+                let items = JSON.parse(localStorage.getItem('items')) || [];
+                items.push({title: title.textContent, img: item.img, description: description.textContent, prijs: prijs.number});
+                localStorage.setItem('items', JSON.stringify(items));
+              });
         });
     })
     .catch(error => console.error('Error fetching menu:', error));
@@ -153,28 +183,39 @@ fetch('menu.json')
     .then(response => response.json())
     .then(data => {
         data.vis.forEach(item => {
-            var card = document.createElement('div');
+            const card = document.createElement('div');
             card.classList.add('card');
 
-            var title = document.createElement('h3');
+            const title = document.createElement('h3');
             title.textContent = item.naam;
             card.appendChild(title);
 
-            var img = document.createElement('img');
-            img.src = item.afbeelding;
+            const img = document.createElement('img');
+            img.src = item.img;
             img.classList.add('imgpak1');
             card.appendChild(img);
 
-            var description = document.createElement('p');
+            const description = document.createElement('p');
             description.textContent = item.ingrediënten;
             card.appendChild(description);
+            
+            const prijs = document.createElement('p');
+            prijs.textContent = `prijs: ${item.prijs}€`
+            card.appendChild(prijs);
 
-            var button = document.createElement('button');
+            const button = document.createElement('button');
             button.classList.add('buttons');
-            button.textContent = "reserveren";
+            button.textContent = "aan bestelling toevoegen";
             card.appendChild(button);
 
+
             document.getElementById('menu-container4').appendChild(card);
+            button.setAttribute("href", "bestellen.html");
+            button.addEventListener("click", function() {
+                let items = JSON.parse(localStorage.getItem('items')) || [];
+                items.push({title: title.textContent, img: item.img, description: description.textContent, prijs: prijs.number});
+                localStorage.setItem('items', JSON.stringify(items));
+              });
         });
     })
     .catch(error => console.error('Error fetching menu:', error));
@@ -184,28 +225,38 @@ fetch('menu.json')
     .then(response => response.json())
     .then(data => {
         data.bijgerechten.forEach(item => {
-            var card = document.createElement('div');
+            const card = document.createElement('div');
             card.classList.add('card');
 
-            var title = document.createElement('h3');
+            const title = document.createElement('h3');
             title.textContent = item.naam;
             card.appendChild(title);
 
-            var img = document.createElement('img');
-            img.src = item.afbeelding;
+            const img = document.createElement('img');
+            img.src = item.img;
             img.classList.add('imgpak1');
             card.appendChild(img);
 
-            var description = document.createElement('p');
+            const description = document.createElement('p');
             description.textContent = item.ingrediënten;
             card.appendChild(description);
 
-            var button = document.createElement('button');
+            const prijs = document.createElement('p');
+            prijs.textContent = `prijs: ${item.prijs}€`
+            card.appendChild(prijs);
+
+            const button = document.createElement('button');
             button.classList.add('buttons');
-            button.textContent = "reserveren";
+            button.textContent = "aan bestelling toevoegen";
             card.appendChild(button);
 
             document.getElementById('menu-container5').appendChild(card);
+            button.setAttribute("href", "bestellen.html");
+            button.addEventListener("click", function() {
+                let items = JSON.parse(localStorage.getItem('items')) || [];
+                items.push({title: title.textContent, img: item.img, description: description.textContent, prijs: prijs.number});
+                localStorage.setItem('items', JSON.stringify(items));
+              });
         });
     })
     .catch(error => console.error('Error fetching menu:', error));
@@ -215,28 +266,40 @@ fetch('menu.json')
     .then(response => response.json())
     .then(data => {
         data.desserts.forEach(item => {
-            var card = document.createElement('div');
+            const card = document.createElement('div');
             card.classList.add('card');
 
-            var title = document.createElement('h3');
+            const title = document.createElement('h3');
             title.textContent = item.naam;
             card.appendChild(title);
 
-            var img = document.createElement('img');
-            img.src = item.afbeelding;
+            const img = document.createElement('img');
+            img.src = item.img;
             img.classList.add('imgpak1');
             card.appendChild(img);
 
-            var description = document.createElement('p');
+            const description = document.createElement('p');
             description.textContent = item.ingrediënten;
             card.appendChild(description);
+            
+            const prijs = document.createElement('p');
+            prijs.textContent = `prijs: ${item.prijs}€`
+            card.appendChild(prijs);
 
-            var button = document.createElement('button');
+            const button = document.createElement('button');
             button.classList.add('buttons');
-            button.textContent = "reserveren";
+            button.textContent = "aan bestelling toevoegen";
             card.appendChild(button);
 
             document.getElementById('menu-container6').appendChild(card);
+            button.setAttribute("href", "bestellen.html");
+            button.addEventListener("click", function() {
+                let items = JSON.parse(localStorage.getItem('items')) || [];
+                items.push({title: title.textContent, img: item.img, description: description.textContent, prijs: prijs.number});
+                localStorage.setItem('items', JSON.stringify(items));
+              });
         });
     })
     .catch(error => console.error('Error fetching menu:', error));
+
+
