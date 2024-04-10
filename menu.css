@@ -1,3 +1,6 @@
+html {
+scroll-behavior: smooth;}
+
 .navbarcontainer {
   display: flex;
   background-color: black;
@@ -7,7 +10,7 @@
   flex-direction: row;
   position: sticky;
   top: 0;
-  z-index: 1;
+    z-index: 1;
 }
 
 .goldtext {
@@ -55,18 +58,26 @@ body {
     width: 40%;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Ruimte tussen de woorden */
+    gap: 20px;
 }
 
 .selector div,
 .selector a {
-    margin: 0 5px; /* Ruimte rondom de links en divs binnen de selector */
+    margin: 0 5px;
 }
 
 .center {
   display: flex;
   justify-content: center;
 }
+}
+
+@media (max-width: 1024px) {
+  .center {
+    position: sticky;
+    top: 8%;
+    z-index: 2;
+  }  
 }
 .maincontainer {
     margin-top: 100px; 
@@ -273,6 +284,14 @@ a:hover {
   flex-direction: row;
   overflow: auto;
   justify-content: space-around;
+  background-color: black;
+
+}
+
+.center {
+  position: sticky;
+  top: 10%;
+  z-index: 2;
 }
 
 .badge {
