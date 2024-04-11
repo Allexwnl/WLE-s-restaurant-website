@@ -257,18 +257,18 @@ fetch('menu.json')
             button.classList.add('button2');
             button.textContent = "edit";
             card.appendChild(button);
-
-            const button2 = document.createElement('button');
-            button2.classList.add('button3');
-            button2.textContent = "delete";
-            card.appendChild(button2);
-            button2.addEventListener('click', () => {
+            button.addEventListener('click', () => {
                 const productnaam = item.naam;
                 const description = item.ingrediënten;
                 const productprijs = item.prijs;
               
                 window.location.href = `edit.html?name=${encodeURIComponent(productnaam)}&beschrijving=${encodeURIComponent(description)}&prijs=${encodeURIComponent(productprijs)}`;
               });
+
+            const button2 = document.createElement('button');
+            button2.classList.add('button3');
+            button2.textContent = "delete";
+            card.appendChild(button2);
 
             document.getElementById('menu-container6').appendChild(card);
             button.setAttribute("href", "bestellen.html");
@@ -277,6 +277,7 @@ fetch('menu.json')
                 items.push({title: title.textContent, img: item.img, description: description.textContent, prijs: prijs.number});
                 localStorage.setItem('items', JSON.stringify(items));
               });
+
         });
     })
     .catch(error => console.error('Error fetching menu:', error));

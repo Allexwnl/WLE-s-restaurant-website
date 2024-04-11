@@ -101,3 +101,12 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
 }
+
+#maincontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: gray;
+  width: 50%;
+  margin-top: 3%;
+}
