@@ -106,7 +106,81 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: gray;
-  width: 50%;
+  width: 400px;
   margin-top: 3%;
+  border-radius: 6px;
+  width: 100%;
+}
+
+#cardcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  background-color: gray ;
+  padding: 1rem; 
+  border-radius: 8px;
+  width: 300px;
+}
+
+input {
+  margin-top: 3%;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  justify-content: space-around;
+  width: 100%;
+}
+
+button:first-child {
+  text-decoration: none;
+  background-color: rgb(0, 221, 0);
+  color: white;
+  width: 100px;
+  border-radius: 3px;
+  list-style: none;
+  outline: none;
+  display: inline-block;
+  border-style: none;
+  cursor: pointer;
+  transition: color 300ms;
+  height: 40px;
+}
+
+button {
+  text-decoration: none;
+  background-color: rgb(255, 1, 1);
+  color: white;
+  width: 100px;
+  border-radius: 3px;
+  list-style: none;
+  outline: none;
+  display: inline-block;
+  border-style: none;
+  cursor: pointer;
+  transition: color 300ms;
+  height: 40px;
+}
+
+button:hover:first-child {
+  background-color: #09b300;
+}
+button:hover {
+  background-color: #b30000;
+}
+
+#inputss {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#h1element{
+  display: flex;  
+  justify-content: center;
+  color: white;
 }
