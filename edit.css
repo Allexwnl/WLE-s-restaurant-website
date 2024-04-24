@@ -1,6 +1,6 @@
 .navbarcontainer {
     display: flex;
-    background-color: gray;
+    background-color: black;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -28,7 +28,7 @@
   body {
     padding: 0;
     margin: 0;
-    background-color: white;
+    background-color: #0f0f0f;
   }
   
   @media (max-width: 600px) {
@@ -183,4 +183,8 @@ button:hover {
   display: flex;  
   justify-content: center;
   color: white;
+}
+
+.admin {
+  color: red;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="newproduct.css">
+</head>
+<body>
+    <nav class="navbarcontainer">
+        <img src="images1/logo.png" alt="" class="navimg">
+        <h1 class="admin">AdminPage</h1>
+        <ul class="goldtext">
+            <li><h1><a href="admin.html">home</a></h1></li>
+            <li><h1><a href="menu.html">menu</a></h1></li>
+            <li><h1>winkel</h1></li>
+            <li><h1><a href="contact.html">contact</a></h1></li>
+            <li><h1>meer</h1></li>
+        </ul>
+    </nav>
+    <div id="maincontainer">
+    <form id="productForm">
+
+        <label for="name">Name:</label><br />
+  
+        <input type="text" id="name" name="name" required /><br />
+  
+  
+        <label for="description">Description:</label><br />
+  
+        <textarea id="description" name="description" required></textarea><br />
+  
+        <label for="image">Image</label><br>
+  
+        <input type="file" id="image" name="image" required /><br />
+  
+  
+        <label for="price">Price:</label><br />
+  
+        <input type="number" id="price" name="price" step="0.01" required /><br />
+  
+  
+        <label for="id">ID:</label><br />
+  
+        <input type="number" id="id" name="id" min="41" required /><br />
+  
+        <label for="section">Select Section:</label>
+        <select id="section">
+          <option value="steengril">Steengril</option>
+          <option value="courmet">Courmet</option>
+          <option value="voorgerechten">voorgerechten</option>
+          <option value="vlees">vlees</option>
+          <option value="vis">vis</option>
+          <option value="bijgerechten">bijgerechten</option>
+          <option value="desserts">desserts</option>
+        </select><br>
+
+        <button onclick="addItem()">Add Item</button>
+  
+      </form>
+    </div>
+    <script src="newproduct.js"></script>
+</body>
+</html>

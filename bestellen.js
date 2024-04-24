@@ -19,7 +19,7 @@ for (const [index, item] of items.entries()) {
     
 
     const title = document.createElement('h3');
-    title.textContent = item.title;
+    title.textContent = item.naam;
     card.appendChild(title);
 
     const img = document.createElement('img');
@@ -28,7 +28,7 @@ for (const [index, item] of items.entries()) {
     card.appendChild(img);
 
     const description = document.createElement('p');
-    description.textContent = item.description;
+    description.textContent = item.ingrediënten;
     description.classList.add('description');
     card.appendChild(description);
 
