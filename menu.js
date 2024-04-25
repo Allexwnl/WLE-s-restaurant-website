@@ -121,27 +121,42 @@ function createCard(item) {
     button.textContent = "aan bestelling toevoegen";
     card.appendChild(button);
 
-    let cartCount = 0;
 
-    button.setAttribute("href", "bestellen.html");
-    button.addEventListener("click", function() {
-        addToCart(item);
-        const notification = document.getElementById("cartNotification");
-        notification.style.display = "block";
+// Retrieve cart count from local storage
+let cartCount = localStorage.getItem('cartcount');
+cartCount = cartCount ? parseInt(cartCount) : 0; // Parse cartCount from string to integer, or set to 0 if not found
 
-        // Hide the notification after 3 seconds
-        setTimeout(function() {
-            notification.style.display = "none";
-        }, 3000);
+// Retrieve badge display setting from local storage
+let badgeDisplay = localStorage.getItem('badgesettings');
+badgeDisplay = badgeDisplay ? badgeDisplay : "none"; // Set default display to none if not found
 
-        cartCount++;
+// Update badge
+const badge = document.getElementById("cartBadge");
+badge.innerText = cartCount;
+badge.style.display = badgeDisplay; // Set the badge display according to the stored value
 
-        // Update badge
-        const badge = document.getElementById("cartBadge");
-        badge.innerText = cartCount;
-        badge.style.display = "inline-block";
-        
-    });
+button.setAttribute("href", "bestellen.html");
+button.addEventListener("click", function() {
+    addToCart(item);
+    const notification = document.getElementById("cartNotification");
+    notification.style.display = "block";
+
+    // Hide the notification after 3 seconds
+    setTimeout(function() {
+        notification.style.display = "none";
+    }, 3000);
+
+    cartCount++; // Increment cart count
+
+    // Update badge
+    badge.innerText = cartCount;
+    badge.style.display = "inline-block";
+
+    // Store cart count and badge display in local storage
+    localStorage.setItem('cartcount', cartCount.toString());
+    localStorage.setItem('badgesettings', "inline-block");
+});
+
 
     // Return the created card element
     return card;
@@ -153,5 +168,6 @@ function addToCart(item) {
     items.push(item);
     localStorage.setItem('items', JSON.stringify(items));
 }
+
 
 loadNewLocalStorage()

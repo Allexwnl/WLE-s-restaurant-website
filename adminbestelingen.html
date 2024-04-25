@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="edit.css">
+    <link rel="stylesheet" href="adminbestelingen.css">
 </head>
 <body>
     <nav class="navbarcontainer">
@@ -14,19 +14,22 @@
             <li><h1><a href="admin.html">home</a></h1></li>
             <li><h1><a href="menu.html">menu</a></h1></li>
             <li><h1><a href="contact.html">contact</a></h1></li>
+            <li><h1><a href="bestelingen.html">klanten bestelingen</a></h1></li>
             <li><h1>meer</h1></li>
+            <li><h1><a href="newproduct.html">maak nieuw product aan</a></h1></li>
         </ul>
     </nav>
-    <div id="maincontainer">
-        <div id="cardcontainer">
-            <h1 id="h1element">pas gegevens aan!</h1>
-            <div id="inputss">
-
-            </div>
-            <div id="buttons">
-            </div>
-        </div>
+    <h1>Admin Bestellingen</h1>
+    <table id="ordersTable">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Time of order</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
     </div>
-    <script src="edit.js"></script>
+    <script src="adminbestelingen.js"></script>
 </body>
 </html>

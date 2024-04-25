@@ -18,7 +18,8 @@
       "id": 3,
       "naam": "steengrill pakket 3",
       "img": "images1/steengrill3.jpeg",
-      "ingrediënten": "maak uw eigen gourmet pakket kies uit worstjes, hamburgers, bieftuk of andere lekkere stukjes vlees en andere lekkere dingen!!"
+      "ingrediënten": "maak uw eigen gourmet pakket kies uit worstjes, hamburgers, bieftuk of andere lekkere stukjes vlees en andere lekkere dingen!!",
+      "prijs": 50
     }
   ],
   "courmet": [
@@ -26,19 +27,22 @@
       "id": 4,
       "naam": "courmet kinderpakket 1",
       "img": "OIG2.m2.jpeg",
-      "ingrediënten": "Het kinder pakket bestaat uit allemaal lekkere dingetjes voor de kinderen zoals hamburgers, worstjes en heel veel andere lekkere stukjes vlees."
+      "ingrediënten": "Het kinder pakket bestaat uit allemaal lekkere dingetjes voor de kinderen zoals hamburgers, worstjes en heel veel andere lekkere stukjes vlees.",
+      "prijs": 20
     },
     {
       "id": 5,
       "naam": "luxe pakket 2",
       "img": "OIG4.jpeg",
-      "ingrediënten": "In dit pakket heb je wat duurder vlees zoals biefstuk, entrecote, lamvlees en kalfslonghaas. Als speciaaltje krijg je pannenkoeken mix en heel klein beetje caviaar."
+      "ingrediënten": "In dit pakket heb je wat duurder vlees zoals biefstuk, entrecote, lamvlees en kalfslonghaas. Als speciaaltje krijg je pannenkoeken mix en heel klein beetje caviaar.",
+      "prijs": 30
     },
     {
       "id": 6,
       "naam": "stell eigen gourmet pakket in",
       "img": "images1/steengrill1.jpeg",
-      "ingrediënten": "Maak uw eigen gourmet pakket, kies uit worstjes, hamburgers, bieftuk of andere lekkere stukjes vlees!"
+      "ingrediënten": "Maak uw eigen gourmet pakket, kies uit worstjes, hamburgers, bieftuk of andere lekkere stukjes vlees!",
+      "prijs": 50
     }
   ],
   "voorgerechten": [
