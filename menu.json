@@ -26,14 +26,14 @@
     {
       "id": 4,
       "naam": "courmet kinderpakket 1",
-      "img": "OIG2.m2.jpeg",
+      "img": "images1/OIG2.m2.jpeg",
       "ingrediënten": "Het kinder pakket bestaat uit allemaal lekkere dingetjes voor de kinderen zoals hamburgers, worstjes en heel veel andere lekkere stukjes vlees.",
       "prijs": 20
     },
     {
       "id": 5,
       "naam": "luxe pakket 2",
-      "img": "OIG4.jpeg",
+      "img": "images1/OIG4.jpeg",
       "ingrediënten": "In dit pakket heb je wat duurder vlees zoals biefstuk, entrecote, lamvlees en kalfslonghaas. Als speciaaltje krijg je pannenkoeken mix en heel klein beetje caviaar.",
       "prijs": 30
     },
