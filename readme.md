@@ -1,3 +1,17 @@
+# how to run this?
+first download visual studio code
+download link: https://code.visualstudio.com/download
+
+then add the exstention: code runner, Live server
+
+if you have installed these 2 extensions restart your visual studio code
+
+then you have a button downright that says "Go Live"
+
+click on that button and the website will be running on your localhost
+
+and your ready to go!
+
 # WLE's restaurant wbesite custommer
 
 Dit is een website voor het restaurant WLE's om bestelingen te maken, om reservaties te plannen en om contact op te nemen met het restaurant.
