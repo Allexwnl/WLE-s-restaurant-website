@@ -4,10 +4,21 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.navbarie {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
 }
 
 .goldtext {
@@ -31,6 +42,17 @@ body {
   background-color: #0f0f0f;
 }
 
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 2;
+  position: absolute;
+  right: 21%;
+  top: 22%;
+}
 @media (max-width: 600px) {
   .navbarcontainer {
       flex-direction: column;
@@ -49,6 +71,12 @@ body {
       flex-direction: column;
       align-items: center;
       align-content: center;
+  }
+
+  .badge {
+    position: absolute;
+    top: 85%;    /* pas aan naar wens */
+    right: 44%;
   }
 }
 
@@ -104,7 +132,10 @@ a:hover {
 
 .twoinfo {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .footer {
@@ -218,16 +249,4 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000; 
-}
-
-.badge {
-  background-color: red;
-  color: white;
-  padding: 4px 8px;
-  text-align: center;
-  border-radius: 100px;
-  z-index: 2;
-  position: absolute;
-  right: 4%;
-  top: 22%;
 }

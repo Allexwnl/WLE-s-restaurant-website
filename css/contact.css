@@ -1,35 +1,59 @@
 .navbarcontainer {
-    display: flex;
-    background-color: black;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-  
-  .goldtext {
-    color: gold;
-    list-style-type: none;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-  }
-  
-  .navimg {
-    width: 10%; 
-    height: 10%;
-  }
-  
-  body {
-    padding: 0;
-    margin: 0;
-    background-color: #0f0f0f;
-  }
+  display: flex;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbarie {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+}
+
+.goldtext {
+  color: gold;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.navimg {
+  width: 10%; 
+  height: 10%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0f0f0f;
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 2;
+  position: absolute;
+  right: 21%;
+  top: 22%;
+}
+
   
   @media (max-width: 600px) {
     .navbarcontainer {
@@ -49,6 +73,12 @@
         flex-direction: column;
         align-items: center;
         align-content: center;
+    }
+
+    .badge {
+      position: absolute;
+      top: 85%;    /* pas aan naar wens */
+      right: 44%;
     }
 }
 
@@ -101,7 +131,7 @@ a:hover {
     align-items: center;
     color: gold;
     background-color: rgb(31, 31, 31);
-    width: 50%;
+    width: 95%;
     margin-top: 8%;
     flex-wrap: wrap;
 }

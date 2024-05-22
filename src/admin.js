@@ -33,8 +33,8 @@ function createCards() {
         { section: 'steengril', containerId: 'menu-container' },
         { section: 'courmet', containerId: 'menu-container1' },
         { section: 'desserts', containerId: 'menu-container2' },
-        {section: 'bijgerechten', containerId: 'menu-container3'},
-        {section: 'vis', containerId: 'menu-container4'},
+        { section: 'bijgerechten', containerId: 'menu-container3'},
+        { section: 'vis', containerId: 'menu-container4'},
         { section: 'vlees', containerId: 'menu-container5' },
         { section: 'voorgerechten', containerId: 'menu-container6' },
     ];
@@ -70,9 +70,7 @@ function createCard(item) {
 
     // Create an img element and set the source to the item image
     const img = document.createElement('img');
-    if (item.img) {
-        img.src = item.img;
-    }
+    img.src = item.img;
     img.classList.add('imgpak1');
     card.appendChild(img);
 

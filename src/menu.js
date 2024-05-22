@@ -76,13 +76,11 @@ function createCard(item) {
     const card = document.createElement('div');
     card.classList.add('card');
     card.setAttribute('id', item.id);
-    card.setAttribute('role', 'listitem');
 
     // Create a h3 element for the item name and add 'title' class
     const title = document.createElement('h3');
     title.textContent = item.naam;
     title.classList.add('title');
-    title.setAttribute('aria-label', `Item name: ${item.naam}`);
     card.appendChild(title);
 
     // Create an img element and set the source to the item image
@@ -128,10 +126,6 @@ function createCard(item) {
         localStorage.setItem('cartcount', cartCount); // update local storage
         badge.style.display = "inline-block";
         badge.innerText = cartCount;
-
-        setTimeout(function() {
-            notification.style.display = "none";
-        }, 3000);
     });
 
 

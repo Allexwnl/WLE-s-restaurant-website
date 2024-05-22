@@ -1,7 +1,7 @@
 html {
 scroll-behavior: smooth;}
 
-.navbarcontainer {
+.navbarie {
   display: flex;
   background-color: black;
   width: 100%;
@@ -10,8 +10,23 @@ scroll-behavior: smooth;}
   flex-direction: row;
   position: sticky;
   top: 0;
-    z-index: 1;
 }
+.navbarcontainer {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.maincontainer2 {
+  width: 80%;
+}
+
 
 .goldtext {
   color: gold;
@@ -33,54 +48,60 @@ body {
   margin: 0;
   background-color: #0f0f0f;
 }
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 2;
+  position: absolute;
+  right: 21%;
+  top: 22%;
+}
 
 @media (max-width: 600px) {
   .navbarcontainer {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
   }
-
+  
   .navimg {
-      width: 25%; 
-      height: 25%;
+    width: 25%; 
+    height: 25%;
   }
-
+  
   .goldtext {
       display: flex;
       flex-direction: column;
       align-items: center;
       align-content: center;
-  }
-
-  .selector {
-    width: 40%;
-    display: flex;
-    justify-content: center;
+    }
+    
+    .selector {
+      width: 100%;
     gap: 20px;
-}
-
-.selector div,
-.selector a {
-    margin: 0 5px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-}
-}
-
-@media (max-width: 1024px) {
+    overflow: auto;
+  }
+  
   .center {
-    position: sticky;
-    top: 8%;
-    z-index: 2;
-  }  
+    display: flex;
+  justify-content: center;
+  position: static;
+  width: 100%;
 }
+
+.badge {
+  position: absolute;
+  top: 85%;    /* pas aan naar wens */
+  right: 44%;
+}
+}
+
 .maincontainer {
-    margin-top: 100px; 
+    margin-top: 80px; 
     padding: 0;
     margin: 0;
     background-color: #0f0f0f;
@@ -241,7 +262,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar {
-  width: 3px;
+  width: 300px;
 }
 
 ::-webkit-scrollbar-track {
@@ -279,32 +300,20 @@ a:hover {
   color: black;
 }
 
+
 .selector {
   display: flex;
+  
   flex-direction: row;
-  overflow: auto;
-  justify-content: space-around;
+  overflow: scroll;
+  gap: 20px;
   background-color: black;
-
+  justify-content: space-between;
+  z-index: 1;
 }
 
-.center {
-  position: sticky;
-  top: 10%;
-  z-index: 2;
-}
 
-.badge {
-  background-color: red;
-  color: white;
-  padding: 4px 8px;
-  text-align: center;
-  border-radius: 100px;
-  z-index: 2;
-  position: absolute;
-  right: 4%;
-  top: 22%;
-}
+
 
 .notification {
   display: none;

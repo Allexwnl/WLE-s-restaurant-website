@@ -1,4 +1,4 @@
-# how to run this?
+# How to run this?
 first download visual studio code
 download link: https://code.visualstudio.com/download
 
